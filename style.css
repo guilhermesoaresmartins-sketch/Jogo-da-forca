@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1e1e2f;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+  text-align: center;
+}
+
+#palavra {
+  font-size: 2rem;
+  letter-spacing: 6px;
+  margin: 20px 0;
+}
+
+#mensagem {
+  min-height: 24px;
+}
+
+#teclado {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+  margin: 20px 0;
+}
+
+#teclado button {
+  padding: 10px 0;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #4f46e5;
+  color: #fff;
+  cursor: pointer;
+}
+
+#teclado button:disabled {
+  background: #444;
+  color: #888;
+  cursor: not-allowed;
+}
+
+#reiniciar {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #22c55e;
+  color: #fff;
+  cursor: pointer;
+}
